@@ -38,7 +38,7 @@ import axios from "@/axios";
 import AppSidebar from "./components/Sidebar.vue";
 import AppHeader from "./components/Header.vue";
 import PasswordModal from "./components/PasswordModal.vue";
-import Cookies from 'js-cookie';
+import Cookies from "js-cookie";
 
 export default {
   components: {
@@ -113,7 +113,7 @@ export default {
           const newCsrfToken = Cookies.get("XSRF-TOKEN");
           if (newCsrfToken) {
             axios.defaults.headers.common["X-XSRF-TOKEN"] = newCsrfToken;
-          } 
+          }
         }
       }
     },
