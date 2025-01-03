@@ -2,7 +2,7 @@ import axios from "axios";
 
 const initAxios = async () => {
   // 首先获取配置文件
-  const response = await fetch('/config.json');
+  const response = await fetch("/config.json");
   const config = await response.json();
 
   // 获取api_url
@@ -10,7 +10,7 @@ const initAxios = async () => {
 
   // 配置axios
   axios.defaults.baseURL = apiUrl;
-  console.log('Axios baseURL:', axios.defaults.baseURL);
+  console.log("Axios baseURL:", axios.defaults.baseURL);
   axios.defaults.timeout = 50000;
   axios.defaults.withCredentials = true;
 
@@ -21,7 +21,7 @@ const initAxios = async () => {
     },
     (error) => {
       return Promise.reject(error);
-    }
+    },
   );
 
   // 添加响应拦截器
@@ -31,7 +31,7 @@ const initAxios = async () => {
     },
     (error) => {
       return Promise.reject(error);
-    }
+    },
   );
 
   return axios;
