@@ -39,7 +39,7 @@ import { ref, onMounted, onBeforeUnmount, watch } from "vue";
 import { debounce } from "lodash";
 import { ElButton, ElInput, ElMessage } from "element-plus";
 import axios from "axios";
-import DOMPurify from 'dompurify';
+import DOMPurify from "dompurify";
 
 export default {
   name: "LogsView",
