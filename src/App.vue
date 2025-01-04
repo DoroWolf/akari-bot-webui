@@ -38,7 +38,7 @@ import axios from "@/axios";
 import AppSidebar from "./components/Sidebar.vue";
 import AppHeader from "./components/Header.vue";
 import PasswordModal from "./components/PasswordModal.vue";
-import Cookies from 'js-cookie';
+import Cookies from "js-cookie";
 
 export default {
   components: {
@@ -114,16 +114,16 @@ export default {
 
         if (response.status === 200) {
           const csrfTokenFromResponse = response.data.csrf_token;
-          
+
           if (csrfTokenFromResponse) {
-            Cookies.set("XSRF-TOKEN", csrfTokenFromResponse, { 
+            Cookies.set("XSRF-TOKEN", csrfTokenFromResponse, {
               expires: 60 / (24 * 60),
-              sameSite: 'Strict',
-              secure: true
+              sameSite: "Strict",
+              secure: true,
             });
-          
-          let csrfToken = Cookies.get("XSRF-TOKEN");
-          axios.defaults.headers.common["X-XSRF-TOKEN"] = csrfToken;
+
+            let csrfToken = Cookies.get("XSRF-TOKEN");
+            axios.defaults.headers.common["X-XSRF-TOKEN"] = csrfToken;
           }
         }
       }

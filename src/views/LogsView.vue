@@ -39,7 +39,7 @@ import { ref, onMounted, onBeforeUnmount, watch } from "vue";
 import { debounce } from "lodash";
 import { ElButton, ElInput, ElMessage } from "element-plus";
 import axios from "axios";
-import DOMPurify from 'dompurify';
+import DOMPurify from "dompurify";
 
 export default {
   name: "LogsView",
@@ -90,9 +90,9 @@ export default {
       }
     };
 
-    const connectWebSocket = async() => {
+    const connectWebSocket = async () => {
       try {
-        const response = await fetch('/config.json');
+        const response = await fetch("/config.json");
         const config = await response.json();
         const apiUrl = config.api_url;
         let baseUrl = apiUrl;
