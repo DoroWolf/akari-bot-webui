@@ -202,11 +202,11 @@ export default {
 }
 
 ::v-deep(.cm-gutters) {
-  font-family: 'Consolas', 'Noto Sans Mono', 'Courier New', Courier, monospace;
+  font-family: "Consolas", "Noto Sans Mono", "Courier New", Courier, monospace;
 }
 
 ::v-deep(.cm-content) {
-  font-family: 'Consolas', 'Noto Sans Mono', 'Courier New', Courier, monospace;
+  font-family: "Consolas", "Noto Sans Mono", "Courier New", Courier, monospace;
 }
 
 .editor-footer {
