@@ -1,19 +1,19 @@
 <template>
   <el-header class="header" :class="{ 'dark-mode': isDarkMode }">
     <div class="header-left">
-        <el-button
-          class="menu-button"
-          @click="switchSidebar"
-          v-if="screenWidth < 1024"
-        >
-          <i class="mdi mdi-menu"></i>
-        </el-button>
+      <el-button
+        class="menu-button"
+        @click="switchSidebar"
+        v-if="screenWidth < 1024"
+      >
+        <i class="mdi mdi-menu"></i>
+      </el-button>
       <div class="logo">
         <img src="@/assets/logo.png" alt="Logo" class="logo-image" />
         <div class="logo-text">
           <span class="akari-bot-text">AkariBot</span>
           <div class="webui-container">
-            <span class="web-ui-text">WebUI </span> 
+            <span class="web-ui-text">WebUI </span>
             <span class="beta-tag">Alpha</span>
           </div>
         </div>

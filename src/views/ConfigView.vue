@@ -199,15 +199,15 @@ export default {
 
 ::v-deep(.cm-editor) {
   height: 100%;
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
 }
 
 ::v-deep(.cm-gutters) {
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
 }
 
 ::v-deep(.cm-content) {
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
 }
 
 .editor-footer {
