@@ -11,7 +11,7 @@
     "@codemirror/theme-one-dark": "^6.1.2",
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@mdi/font": "^7.4.47",
-    "axios": "^1.7.9",
+    "axios": "^1.8.2",
     "codemirror": "^6.0.1",
     "core-js": "^3.8.3",
     "dompurify": "^3.2.3",
